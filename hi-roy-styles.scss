@@ -81,3 +81,128 @@
     }
 
 }
+
+
+// WPLife
+body {
+    box-shadow: inset -15px -10px 80px 3px rgba(0,0,0,0.5);
+    font-size: 14px;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: auto;
+    @media only screen
+    and (max-device-width : 768px)
+    and (orientation : landscape) {
+        box-shadow: none;
+        font-size: 12px;
+    }
+}
+#wplife {
+    margin: 0 auto;
+    padding-top: 20vh;
+    text-align: center;
+    width: 50vw;
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)  {
+        padding-top: 5vh;
+    }
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+        padding-top: 10vh;
+    }
+    @media only screen
+    and (max-device-width : 768px)
+    and (orientation : landscape) {
+        padding-top: 0;
+    }
+    .message {
+        h1 {
+            color: #3a5795;
+            font-size: 5em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.25em;
+            margin: 20px auto;
+        }
+    }
+    .social {
+        .white {
+            color: white;
+            fill: white;
+        }
+        .screen-reader-text {
+            display: block;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-indent: -9999px;
+        }
+        h2 {
+            font-size: 3em;
+            margin: 0 0 10px 0;
+            @media only screen
+            and (max-device-width : 768px)
+            and (orientation : landscape) {
+                font-size: 2em;
+            }
+        }
+        & > a {
+            margin: 0 20px;
+        }
+        p.join-convo {
+            font-size: 1.5em;
+        }
+        a#hi-roy-tweet-event {
+            display: inline-block;
+            background: #55acee;
+            box-shadow: inset -15px -10px 80px 3px rgba(0,0,0,0.5);
+            height: 200px;
+            width: 200px;
+            svg {
+                height: 125px;
+                margin-top: 37px;
+                width: 125px;
+            }
+            @media only screen
+            and (max-device-width : 768px)
+            and (orientation : landscape) {
+                height: 150px;
+                width: 150px;
+                svg {
+                    height: 75px;
+                    width: 75px;
+                }
+            }
+        }
+        a#hi-roy-fb-event {
+            display: inline-block;
+            background: #3a5795;
+            box-shadow: inset -15px -10px 80px 3px rgba(0,0,0,0.5);
+            height: 200px;
+            width: 200px;
+            svg {
+                height: 125px;
+                margin-top: 37px;
+                width: 125px;
+            }
+        }
+    }
+}
+.wpcrowd {
+    margin: 20px auto;
+}
+
+.tagboard {
+    display: none;
+    height: 80vh;
+}
